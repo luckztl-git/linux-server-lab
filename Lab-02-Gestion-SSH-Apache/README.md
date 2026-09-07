@@ -15,7 +15,7 @@ Installer, activer et vérifier les services SSH et Apache sur un serveur Ubuntu
 
 Avant de tester les services, l’adresse IP du serveur a été vérifiée.
 
-![Vérification de l'adresse IP](./captures/verification-adresse-ip.jpg)
+![Vérification de l'adresse IP](./captures/verification-adresse-ip.png)
 
 ## Configuration du service SSH
 
@@ -29,11 +29,11 @@ sudo systemctl status ssh
 sudo ss -tulpn | grep :22
 ```
 
-![Lancement et paramétrage du serveur SSH](./captures/lancement-parametrage-ssh.jpg)
+![Lancement et paramétrage du serveur SSH](./captures/lancement-parametrage-ssh.png)
 
 Le bon fonctionnement du service SSH a ensuite été contrôlé.
 
-![Contrôle du bon fonctionnement du serveur SSH](./captures/controle-ssh.jpg)
+![Contrôle du bon fonctionnement du serveur SSH](./captures/controle-ssh.png)
 
 ## Configuration du service Apache
 
@@ -46,11 +46,11 @@ sudo systemctl start apache2
 sudo systemctl status apache2
 ```
 
-![Lancement et vérification d'Apache](./captures/lancement-verification-apache.jpg)
+![Lancement et vérification d'Apache](./captures/lancement-verification-apache.png)
 
 Une vérification complémentaire du service Apache a été réalisée.
 
-![Contrôle du bon fonctionnement du serveur Apache](./captures/controle-apache.jpg)
+![Contrôle du bon fonctionnement du serveur Apache](./captures/controle-apache.png)
 
 ## Activation automatique d’Apache
 
@@ -63,7 +63,7 @@ sudo systemctl enable apache2
 sudo systemctl is-enabled apache2
 ```
 
-![Activation automatique d'Apache au démarrage](./captures/activation-apache-demarrage.jpg)
+![Activation automatique d'Apache au démarrage](./captures/activation-apache-demarrage.png)
 
 ## Vérification de la configuration Apache
 
@@ -75,7 +75,7 @@ Commande utilisée :
 sudo apache2ctl configtest
 ```
 
-![Vérification système Apache complet](./captures/verification-systeme-apache.jpg)
+![Vérification système Apache complet](./captures/verification-systeme-apache.png)
 
 ## Modification de la page d’accueil
 
@@ -87,7 +87,7 @@ Une vérification locale a ensuite été réalisée avec :
 curl http://localhost
 ```
 
-![Modification de la page d'accueil Apache](./captures/modification-page-apache.jpg)
+![Modification de la page d'accueil Apache](./captures/modification-page-apache.png)
 
 ## Résultat
 
