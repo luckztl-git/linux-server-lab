@@ -26,7 +26,7 @@ getent group sudo
 
 Ces commandes permettent de confirmer l’identité de l’utilisateur courant ainsi que ses privilèges d’administration éventuels.
 
-![Affichage des privilèges utilisateurs](./captures/1-affichage-privileges-utilisateurs.png)
+![Affichage des privilèges utilisateurs](./captures/affichage-privileges-utilisateurs.png)
 
 ## Vérification des accès et des ports ouverts
 
@@ -41,7 +41,7 @@ sudo ss -tulpn | grep -E ':22|:80'
 
 Cette vérification permet de repérer les services en écoute sur le système et d’associer les ports ouverts aux processus correspondants.
 
-![Vérification des accès et ports ouverts](./captures/2-verification-acces-et-ports-ouverts.png)
+![Vérification des accès et ports ouverts](./captures/verification-acces-et-ports-ouverts.png)
 
 ## Résultat
 
